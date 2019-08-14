@@ -1,0 +1,25 @@
+{
+  "name": "lotterycheck",
+  "version": "1.0.0",
+  "description": "check lottery result",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node lib/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "build": "babel src -d lib"
+  },
+  "author": "Mr.Warapol Junmontree, kangthekiss@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "osmosis": "^1.1.10"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/node": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "nodemon": "^1.19.1"
+  }
+}
