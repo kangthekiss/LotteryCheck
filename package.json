@@ -12,6 +12,7 @@
   "author": "Mr.Warapol Junmontree, kangthekiss@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "@babel/runtime": "^7.5.5",
     "express": "^4.17.1",
     "osmosis": "^1.1.10"
   },
@@ -19,6 +20,7 @@
     "@babel/cli": "^7.5.0",
     "@babel/core": "^7.5.4",
     "@babel/node": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.5.5",
     "@babel/preset-env": "^7.5.4",
     "nodemon": "^1.19.1"
   }
