@@ -15,7 +15,7 @@ const filter = async (req, res) => {
   try {
     let data = []
 
-    if (req.query.data !== undefined) {
+    if (req.query.data !== undefined && req.query.data !== '') {
       data = await lotteryResult(req.query.data)
     }
 

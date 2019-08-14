@@ -55,7 +55,7 @@ const lotteryResult = (filter = '') => {
           let list = []
 
           data.filter(item => {
-            if (item.prize1 === filter) list.push(item.prize1)
+            if (item.prize1 === filter) list.push({ prize: item.prize1 })
 
             item.prizen1.filter(item => {
               if (item === filter) list.push({ prizen1: item })
@@ -85,7 +85,7 @@ const lotteryResult = (filter = '') => {
               if (item === filter) list.push({ prizel3: item })
             })
 
-            if (item.prizel2 === filter) list.push(item.prizel2)
+            if (item.prizel2 === filter) list.push({ prizel2: item.prizel2 })
 
             resolve(list)
           })
