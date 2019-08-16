@@ -57,37 +57,53 @@ const lotteryResult = (filter = '') => {
           let list = []
 
           data.filter(item => {
-            if (item.prize1 === filter) list.push({ prize: item.prize1 })
+            if (item.prize1 && item.prize1 === filter)
+              list.push({ prize: item.prize1 })
 
-            item.prizen1.filter(item => {
-              if (item === filter) list.push({ prizen1: item })
-            })
+            if (item.prizen1) {
+              item.prizen1.filter(item => {
+                if (item === filter) list.push({ prizen1: item })
+              })
+            }
 
-            item.prize2.filter(item => {
-              if (item === filter) list.push({ prize2: item })
-            })
+            if (item.prize2) {
+              item.prize2.filter(item => {
+                if (item === filter) list.push({ prize2: item })
+              })
+            }
 
-            item.prize3.filter(item => {
-              if (item === filter) list.push({ prize3: item })
-            })
+            if (item.prize3) {
+              item.prize3.filter(item => {
+                if (item === filter) list.push({ prize3: item })
+              })
+            }
 
-            item.prize4.filter(item => {
-              if (item === filter) list.push({ prize4: item })
-            })
+            if (item.prize4) {
+              item.prize4.filter(item => {
+                if (item === filter) list.push({ prize4: item })
+              })
+            }
 
-            item.prize5.filter(item => {
-              if (item === filter) list.push({ prize5: item })
-            })
+            if (item.prize5) {
+              item.prize5.filter(item => {
+                if (item === filter) list.push({ prize5: item })
+              })
+            }
 
-            item.prizef3.filter(item => {
-              if (item === filter) list.push({ prizef3: item })
-            })
+            if (item.prizef3) {
+              item.prizef3.filter(item => {
+                if (item === filter) list.push({ prizef3: item })
+              })
+            }
 
-            item.prizel3.filter(item => {
-              if (item === filter) list.push({ prizel3: item })
-            })
+            if (item.prizel3) {
+              item.prizel3.filter(item => {
+                if (item === filter) list.push({ prizel3: item })
+              })
+            }
 
-            if (item.prizel2 === filter) list.push({ prizel2: item.prizel2 })
+            if (item.prizel2 && item.prizel2 === filter)
+              list.push({ prizel2: item.prizel2 })
 
             resolve(list)
           })
