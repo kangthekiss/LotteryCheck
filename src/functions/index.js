@@ -15,8 +15,10 @@ const splitText = string => {
 }
 
 const splitSpace = string => {
-  let str_split = string.split(' ')
-  return concatString(str_split)
+  if (string) {
+    let str_split = string.split(' ')
+    return concatString(str_split)
+  }
 }
 
 const isEmptyObject = obj => {
